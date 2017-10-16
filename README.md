@@ -147,7 +147,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
-1. Open the file **[Node-RED-Flows/Lab_start_20170928.json](Node-RED-Flows/Lab_start_20170928.json)** in GitHub and copy all the content into the clipboard.
+1. Open the file **[Node-RED-Flows/lab_start_20171013.json](Node-RED-Flows/lab_start_20171013.json)** in GitHub and copy all the content into the clipboard.
 
 2. Inside Node-RED, select **Menu->Import->Clipboard**
 ![Node-RED_Import_node_red_flow_01](images/15_Node-RED_Import_node_red_flow_01.jpg)
