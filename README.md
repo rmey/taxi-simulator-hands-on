@@ -358,12 +358,12 @@ Click *create*.
 
     ![create notebook](images/dsx-create-notebook.png)
 
-8. Follow the instructions given in the notebook.
+8. Follow the instructions given in the **notebook**.
 
-Here a brief preview on the upcoming steps using Python/Spark inside the notebook.
+Here a brief preview on the upcoming steps using **Python/Spark** inside the **notebook**.
 
 * Preparing the environment
-* Get the data from ObjectStorage
+* Get the data from **ObjectStorage**
 * Format the Data
 * Display data with _pixeldust_
 * Display data with _matplotlib_
