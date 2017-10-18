@@ -360,13 +360,13 @@ Click *create*.
 
 8. Follow the instructions given in the **notebook**.
 
-Here a brief preview on the upcoming steps using **Python/Spark** inside the **notebook**.
-
+Here a brief preview on the upcoming steps using **Python/Spark** inside the **Jupyter notebook** .
+[Link](http://jupyter.org/)
 * Preparing the environment
 * Get the data from **ObjectStorage**
 * Format the Data
-* Display data with _pixeldust_
-* Display data with _matplotlib_
+* Display data with _pixeldust_ [Link](https://developer.ibm.com/clouddataservices/2016/10/11/pixiedust-magic-for-python-notebook/)
+* Display data with _matplotlib_ [Link](https://github.com/matplotlib/matplotlib)
 
 1. **Pixeldust**
 ![dsx_display_results](images/dsx_display_results_01.jpg)
