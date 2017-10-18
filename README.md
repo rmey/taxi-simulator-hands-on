@@ -40,7 +40,7 @@ The objective of the **second Lab** is to Analyze the given data using the **Dat
 ---
 # Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED<a name="part0-1">
 
-In this lab does contain the IoT and the Data generation part.
+This lab does contain the IoT and the Data generation part.
 
 **Here are the basic UseCases of the Node-RED Dashboard-UI for the first Lab**
 
