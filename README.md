@@ -1,33 +1,48 @@
-# Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator
+# Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 
-## Steps of the Lab
-0. [Overview](#part0)
-1. [Setup the needed application and services](#part1)
+## Steps of the Labs
+
+[Overview](##part0)
+
+---
+* [Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED](#part0-1)
+
+  1. [Setup the needed application and services](#part1)
     1. [Setup and configure Node-RED](#part1-1)
     2. [Create and bind the needed Bluemix services](#part1-2)
-2. [Configure the services and adapt the Node-RED flow](#part2)
+  2. [Configure the services and adapt the Node-RED flow](#part2)
     1. [Import existing Node-RED flow](#part2-1)
     2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#part2-2)
     3. [Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab](#part2-3)
     4. [Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab](#part2-4)
-3. [Use the Watson IoT input in Node-RED](#part3)
-4. [Use the Web UI for Simulation](#part4)
-5. [Analyze the IoT data with Data Science Experience](#part5)
+  3. [Use the Watson IoT input in Node-RED](#part3)
+  4. [Use the Web UI for Simulation](#part4)
 
 ---
-## Overview <a name="part0"></a>
+* [Lab 2 - Analyze Data with Data Science Experience](#part0-2)
 
-In this Lab you will create a **Taxi-Simulator** for IoT.
-This Taxi-Simulator will create **sample data** for a Data Analytics part, in one of the following Labs of a Hands-on Workshop.
+  1. [Analyze the IoT data with Data Science Experience](#part5)
+
+---
+## Overview<a name="part0"></a>
+
+In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
+This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
 
 In the following image you can see the dependency of the two Labs.
 
 ![01_Lab_overview](images/01_Lab_overview.jpg)
 
-The objective of the first Lab is related to IoT, that means you will get a basic understanding of the IBM IoT and how to
-customize your own flow in Node-RED, by using the given IoT Data to display in your Node-RED Dashboard UI.
+The objective of the **first Lab** is related to IoT, that means you will get a basic understanding of the IBM IoT and how to
+customize your own flow in Node-RED, by using the given **IoT Data** to display in your Node-RED Dashboard UI.
+The objective of the **second Lab** is to Analyze the given data using the **Data Science Experience** in Bluemix.
 
-**Here are the base UseCases of the UI**
+---
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED<a name="part0-1">
+
+In this lab does contain the IoT and the Data generation part.
+
+**Here are the basic UseCases of the Node-RED Dashboard-UI for the first Lab**
 
 ![01_basic_usecases](images/01_basic_usecases.jpg)
 
@@ -43,7 +58,7 @@ customize your own flow in Node-RED, by using the given IoT Data to display in y
     - Start and stop simulation
     - Observe the first simulated taxi and if the speeding is too high get a notification. (This will be your task to implement.)
 
-**The Lab contains the following steps**
+**The first Lab contains the following steps**
 
 *a) Setup:*
 * A simulator for Taxis, sending their speed and location information.
@@ -61,8 +76,8 @@ customize your own flow in Node-RED, by using the given IoT Data to display in y
 * The [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south)
 * The [Message Hub](https://console.bluemix.net/catalog/?context=services&app=bdd3e76c-09b7-47a6-8515-50c7e6b477e9&env_id=ibm%3Ayp%3Aeu-gb&search=Message%20Hub)
 
+--
 
----
 ## 1. Setup the needed application and services <a name="part1"></a>
 
 In this part of the Lab you will setup and configure the environment we will use for your **Taxi-Simulator**.
@@ -140,10 +155,10 @@ In this part of the Lab you will setup and configure the environment we will use
 ![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
 
 ---
-# 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
+## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
 
 ---
-## 2.1 Import existing Node-RED flow <a name="part2-1"></a>
+### 2.1 Import existing Node-RED flow <a name="part2-1"></a>
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
@@ -158,7 +173,7 @@ In this part of the Lab you will setup and configure the environment we will use
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-## 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab <a name="part2-2"></a>
+### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab <a name="part2-2"></a>
 Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 1. With the taxi-simulator you can create different Taxi devices inside the Watson IoT Platform.
@@ -167,7 +182,7 @@ Inside the **Configure-TaxiSimulation** tab you have following functionality:
 4. The flow contains a dashboard UI.
 
 ---
-## 2.2.1  Watson IoT Service and Node-RED configuration
+#### 2.2.1  Watson IoT Service and Node-RED configuration
 Now you will create an app API-Key inside the Watson IoT Service and add the information to the existing Node-RED flow.
 
 1. Open the existing Watson IoT Service and press launch
@@ -198,7 +213,7 @@ Now you will create an app API-Key inside the Watson IoT Service and add the inf
 7. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-## 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="part2-3"></a>
+### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="part2-3"></a>
 
 You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
@@ -223,7 +238,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
 
 ---
-## 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab <a name="part2-4"></a>
+### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab <a name="part2-4"></a>
 
 In this tab you can create a sample data record, which will be stored in the ObjectStorage database.
 We need to insert the credentials into the node configuration.
@@ -239,7 +254,7 @@ We need to insert the credentials into the node configuration.
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-# 3. Use the Watson IoT input in Node-RED <a name="part3"></a>
+## 3. Use the Watson IoT input in Node-RED <a name="part3"></a>
 
 **Create your own Node-RED flow**
 * Use Watson IoT as input in your flow
@@ -286,7 +301,7 @@ We need to insert the credentials into the node configuration.
 9. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-# 4. Use the Web UI for Simulation <a name="part4"></a>
+## 4. Use the Web UI for Simulation <a name="part4"></a>
 ---
 
 1. Copy the URL of your Node-RED application and add **/ui** at the end, e.g.
@@ -308,7 +323,10 @@ We need to insert the credentials into the node configuration.
 ![Taxi Sim IoT](images/ui-taxi-sim-iot.png)
 
 ---
-# 5. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
+# Lab 2 - Analyze Data with Data Science Experience<a name="part0-3">
+---
+
+## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
 ---
 
 1. Select the *Data Science Experience* Service from the Catalog.
@@ -341,3 +359,17 @@ Click *create*.
     ![create notebook](images/dsx-create-notebook.png)
 
 8. Follow the instructions given in the notebook.
+
+Here a brief preview on the upcoming steps using Python/Spark inside the notebook.
+
+* Preparing the environment
+* Get the data from ObjectStorage
+* Format the Data
+* Display data with _pixeldust_
+* Display data with _matplotlib_
+
+1. **Pixeldust**
+![dsx_display_results](images/dsx_display_results_01.jpg)
+
+2. **Matplotlib**
+![dsx_display_results](images/dsx_display_results_02.jpg)
