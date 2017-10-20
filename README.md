@@ -38,7 +38,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Data Science Experience** in Bluemix.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1">
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1"></a>
 
 This lab does contain the IoT and the Data generation part.
 
@@ -323,7 +323,7 @@ We need to insert the credentials into the node configuration.
 ![Taxi Sim IoT](images/ui-taxi-sim-iot.png)
 
 ---
-# Lab 2 - Analyze Data with Data Science Experience<a name="part0-3">
+# Lab 2 - Analyze Data with Data Science Experience <a name="part0-2"></a>
 ---
 
 ## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
