@@ -2,19 +2,19 @@
 
 ## Steps of the Labs
 
-[Overview](##part0)
+[Overview](#part0)
 
 ---
 * [Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED](#part0-1)
 
   1. [Setup the needed application and services](#part1)
-    1. [Setup and configure Node-RED](#part1-1)
-    2. [Create and bind the needed Bluemix services](#part1-2)
+      1. [Setup and configure Node-RED](#part1-1)
+      2. [Create and bind the needed Bluemix services](#part1-2)
   2. [Configure the services and adapt the Node-RED flow](#part2)
-    1. [Import existing Node-RED flow](#part2-1)
-    2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#part2-2)
-    3. [Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab](#part2-3)
-    4. [Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab](#part2-4)
+      1. [Import existing Node-RED flow](#part2-1)
+      2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#part2-2)
+      3. [Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab](#part2-3)
+      4. [Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab](#part2-4)
   3. [Use the Watson IoT input in Node-RED](#part3)
   4. [Use the Web UI for Simulation](#part4)
 
@@ -24,7 +24,7 @@
   1. [Analyze the IoT data with Data Science Experience](#part5)
 
 ---
-## Overview<a name="part0"></a>
+## Overview <a name="part0"></a>
 
 In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
 This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
@@ -38,7 +38,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Data Science Experience** in Bluemix.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED<a name="part0-1">
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1">
 
 This lab does contain the IoT and the Data generation part.
 
