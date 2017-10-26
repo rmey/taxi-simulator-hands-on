@@ -77,8 +77,7 @@ This lab does contain the IoT and the Data generation part.
 * The [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south)
 * The [Message Hub](https://console.bluemix.net/catalog/?context=services&app=bdd3e76c-09b7-47a6-8515-50c7e6b477e9&env_id=ibm%3Ayp%3Aeu-gb&search=Message%20Hub)
 
---
-
+---
 ## 1. Setup the needed application and services <a name="part1"></a>
 [->](#part0-0)
 In this part of the Lab you will setup and configure the environment we will use for your **Taxi-Simulator**.
