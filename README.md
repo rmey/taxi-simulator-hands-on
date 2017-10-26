@@ -156,9 +156,9 @@ In this part of the Lab you will setup and configure the environment we will use
 
 ---
 ## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
-[->](#part0-0)
----
+
 ### 2.1 Import existing Node-RED flow <a name="part2-1"></a>
+[->](#part0-0)
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
