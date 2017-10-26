@@ -1,6 +1,6 @@
 # Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 
-## Steps of the Labs <a name="#part0-0">
+## Steps of the Labs <a name="#part0-0"></a>
 
 [Overview](#part0)
 
