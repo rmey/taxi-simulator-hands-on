@@ -329,11 +329,12 @@ We need to insert the credentials into the node configuration.
 
 ---
 # Lab 2 - Analyze Data with Data Science Experience <a name="part0-2"></a>
----
-
-## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
 [->](#part0-0)
+
+Now you will access the created data inside the ObjectStorage and Analyze data with the *Data Science Experience*, by showing charts using **Pixeldust** and **Matplotlib**.
+
 ---
+## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
 
 1. Select the *Data Science Experience* Service from the Catalog.
 ![DSX in the catalog](images/dsx-catalog.png)
@@ -373,8 +374,8 @@ Click *create*.
   * Display data with _pixeldust_ [Link](https://developer.ibm.com/clouddataservices/2016/10/11/pixiedust-magic-for-python-notebook/)
   * Display data with _matplotlib_ [Link](https://github.com/matplotlib/matplotlib)
 
-  1. **Pixeldust**
+  1. **Pixeldust** a easy way to create and change interactive charts.
   ![dsx_display_results](images/dsx_display_results_01.jpg)
 
-  2. **Matplotlib**
+  2. **Matplotlib** using which is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell (à la MATLAB or Mathematica), web application servers, and various graphical user interface toolkits.
   ![dsx_display_results](images/dsx_display_results_02.jpg)
