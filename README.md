@@ -1,6 +1,6 @@
 # Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 
-## Steps of the Labs
+## Steps of the Labs <a name="#part0.1">
 
 [Overview](#part0)
 
@@ -25,6 +25,7 @@
 
 ---
 ## Overview <a name="part0"></a>
+[->](#part0.1)
 
 In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
 This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
@@ -39,7 +40,7 @@ The objective of the **second Lab** is to Analyze the given data using the **Dat
 
 ---
 # Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1"></a>
-
+[->](#part0.1)
 This lab does contain the IoT and the Data generation part.
 
 **Here are the basic UseCases of the Node-RED Dashboard-UI for the first Lab**
@@ -79,11 +80,11 @@ This lab does contain the IoT and the Data generation part.
 --
 
 ## 1. Setup the needed application and services <a name="part1"></a>
-
+[->](#part0.1)
 In this part of the Lab you will setup and configure the environment we will use for your **Taxi-Simulator**.
 
 ### 1.1 Setup and configure Node-RED <a name="part1-1"></a>
-
+[->](#part0.1)
 1. Logon to your Bluemix Account and search the catalog for Node-RED. You will find the **Node-RED Boiler Template** and click on the icon.
 
     ![Node-RED Boiler Template](images/01_Node-RED_Starter.jpg)
@@ -118,7 +119,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 ---
 ### 1.2 Create and bind the needed Bluemix services <a name="part1-2"></a>
-
+[->](#part0.1)
 **Watson IoT and MessageHub**
 
 1. Go back to your bluemix application and select **connections** on the left hand side and press **connect new**.
@@ -156,7 +157,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 ---
 ## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
-
+[->](#part0.1)
 ---
 ### 2.1 Import existing Node-RED flow <a name="part2-1"></a>
 
@@ -174,6 +175,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 ---
 ### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab <a name="part2-2"></a>
+[->](#part0.1)
 Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 1. With the taxi-simulator you can create different Taxi devices inside the Watson IoT Platform.
@@ -183,6 +185,7 @@ Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 ---
 #### 2.2.1  Watson IoT Service and Node-RED configuration
+[->](#part0.1)
 Now you will create an app API-Key inside the Watson IoT Service and add the information to the existing Node-RED flow.
 
 1. Open the existing Watson IoT Service and press launch
@@ -214,6 +217,7 @@ Now you will create an app API-Key inside the Watson IoT Service and add the inf
 
 ---
 ### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="part2-3"></a>
+[->](#part0.1)
 
 You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
@@ -239,6 +243,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
 ---
 ### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab <a name="part2-4"></a>
+[->](#part0.1)
 
 In this tab you can create a sample data record, which will be stored in the ObjectStorage database.
 We need to insert the credentials into the node configuration.
@@ -255,6 +260,7 @@ We need to insert the credentials into the node configuration.
 
 ---
 ## 3. Use the Watson IoT input in Node-RED <a name="part3"></a>
+[->](#part0.1)
 
 **Create your own Node-RED flow**
 * Use Watson IoT as input in your flow
@@ -302,7 +308,7 @@ We need to insert the credentials into the node configuration.
 
 ---
 ## 4. Use the Web UI for Simulation <a name="part4"></a>
----
+[->](#part0.1)
 
 1. Copy the URL of your Node-RED application and add **/ui** at the end, e.g.
     ```
@@ -327,6 +333,7 @@ We need to insert the credentials into the node configuration.
 ---
 
 ## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
+[->](#part0.1)
 ---
 
 1. Select the *Data Science Experience* Service from the Catalog.
