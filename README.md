@@ -355,7 +355,7 @@ Click *create*.
 
     ![new project in DSX](images/dsx-create-project.png)
 
-6. _NOTE:_ **In case no Spark is available** 
+6. _NOTE:_ **In case no Spark is available**
 
     If you will be informed there is no Spark you have to create a new one
 
@@ -370,6 +370,7 @@ Click *create*.
     ![new spark in DSX 03](images/dsx-create-spark-03.png)
 
     Select the Spark
+
     ![new spark in DSX 04](images/dsx-create-spark-04.png)     
 
 7. Give your new project a name, for example **"taxi-lab"**. Leave the defaults for the other configurations.
@@ -386,7 +387,7 @@ Click *create*.
 
     ![create notebook](images/dsx-create-notebook.png)
 
-8. Follow the instructions given in the **notebook**.
+9. Follow the instructions given in the **notebook**.
 
   Here a brief preview on the upcoming steps using **Python/Spark** inside the **Jupyter notebook**. [Link](http://jupyter.org/)
   * Preparing the environment
