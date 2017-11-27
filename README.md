@@ -355,7 +355,17 @@ Click *create*.
 
     ![new project in DSX](images/dsx-create-project.png)
 
-6. Give your new project a name, for example **"taxi-lab"**. Leave the defaults for the other configurations.
+6. _NOTE in Case no Spark is available:_ If you will be informed there is no Spark you have to create a new one
+
+    ![new spark in DSX 01](images/dsx-create-spark-01.png)    
+
+7. _NOTE in Case no Spark is available:_ Select the lite version and give a name
+
+    ![new spark in DSX 02](images/dsx-create-spark-01.png)
+
+    ![new spark in DSX 03](images/dsx-create-spark-03.png)    
+
+7. Give your new project a name, for example **"taxi-lab"**. Leave the defaults for the other configurations.
 
     The chosen Spark Service is the default Spark service that was configured when you set up your DSX account.
 
@@ -365,7 +375,7 @@ Click *create*.
 
     ![name new project](images/dsx-create-project-details.png)
 
-7. In your new project, select **add notebooks**. Choose **"From File"**, name the notebook *"Taxi"* (or anything else) and select the file **[python-notebook/Taxi.ipynb](python-notebook/Taxi.ipynb)** from this repository. Then press **Create Notebook**.
+8. In your new project, select **add notebooks**. Choose **"From File"**, name the notebook *"Taxi"* (or anything else) and select the file **[python-notebook/Taxi.ipynb](python-notebook/Taxi.ipynb)** from this repository. Then press **Create Notebook**.
 
     ![create notebook](images/dsx-create-notebook.png)
 
