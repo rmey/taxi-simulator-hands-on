@@ -355,15 +355,22 @@ Click *create*.
 
     ![new project in DSX](images/dsx-create-project.png)
 
-6. _NOTE in Case no Spark is available:_ If you will be informed there is no Spark you have to create a new one
+6. _NOTE:_ **In case no Spark is available** 
+
+    If you will be informed there is no Spark you have to create a new one
 
     ![new spark in DSX 01](images/dsx-create-spark-01.png)    
 
-7. _NOTE in Case no Spark is available:_ Select the lite version and give a name
+    Select the lite version and give a name
 
     ![new spark in DSX 02](images/dsx-create-spark-01.png)
 
-    ![new spark in DSX 03](images/dsx-create-spark-03.png)    
+    Create the Spark
+
+    ![new spark in DSX 03](images/dsx-create-spark-03.png)
+
+    Select the Spark
+    ![new spark in DSX 04](images/dsx-create-spark-04.png)     
 
 7. Give your new project a name, for example **"taxi-lab"**. Leave the defaults for the other configurations.
 
