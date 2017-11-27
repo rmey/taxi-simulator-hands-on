@@ -30,6 +30,8 @@
 In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
 This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
 
+_Please use for the Lab the US-South Region._
+
 In the following image you can see the dependency of the two Labs.
 
 a) [Lab 1 - Taxi-Simulator IoT Part on YouTube](https://youtu.be/wLHU7mRcn94)
