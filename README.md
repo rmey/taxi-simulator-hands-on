@@ -349,7 +349,7 @@ Click *create*.
 
 3. Open the **Data Science Experience** by pressing *Get Started*.
 
-4. When asked to select *Organization* and *Space*, confirm the defaults and press *continue*.
+4. When asked to select *Organization* and *Space*, verify the selection with your *Organization* and *Space* of the IoT Lab 1 and confirm the defaults, if this fits and press *continue*.
 
 5. Create a new project by clicking *Create new > Project* in the upper right corner.
 
