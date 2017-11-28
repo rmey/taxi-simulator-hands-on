@@ -36,7 +36,7 @@ In the following image you can see the dependency of the two Labs.
 
 a) [Lab 1 - Taxi-Simulator IoT Part on YouTube](https://youtu.be/wLHU7mRcn94)
 
-![01_Lab_overview](images/01_Lab_overview.jpg)
+![01_Lab_overview](images/01_Lab_overview.png)
 
 The objective of the **first Lab** is related to IoT, that means you will get a basic understanding of the IBM IoT and how to
 customize your own flow in Node-RED, by using the given **IoT Data** to display in your Node-RED Dashboard UI.
@@ -376,7 +376,7 @@ Click *create*.
 
     ![new spark in DSX 03](images/dsx-create-spark-03.png)
 
-    Select the Spark for your project inside **Data Science Experience** 
+    Select the Spark for your project inside **Data Science Experience**
 
     ![new spark in DSX 04](images/dsx-create-spark-04.png)     
 
