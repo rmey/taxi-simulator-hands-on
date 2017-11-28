@@ -73,7 +73,7 @@ This lab does contain the IoT and the Data generation part.
 * Use Watson IoT as input in your flow
 * Use the Node-RED for implementing some logic and UI
 
-**What you will use in IBM Bluemix?**
+**What you will use in IBM Cloud?**
 
 * The **Node-RED Starter** _Boiler Template_ which contains a **Cloudant DB** and a **Node.JS Server**.
 * You will add additional nodes into the Node-RED instance ([Node-RED Dashboard Node](https://flows.nodered.org/node/node-red-dashboard), [Node-RED Virtual IoT Device Node](https://www.npmjs.com/package/node-red-contrib-iot-virtual-device), [Node-RED Objectstore](http://flows.nodered.org/node/node-red-contrib-objectstore) and [Node-RED MessageHub](https://flows.nodered.org/node/node-red-contrib-messagehub))
@@ -337,6 +337,12 @@ We need to insert the credentials into the node configuration.
 
 Now you will access the created data inside the ObjectStorage and Analyze data with the *Data Science Experience*, by showing charts using **Pixeldust** and **Matplotlib**.
 
+**What you will use in IBM Cloud?**
+
+* The [Data Science Experience](https://console.bluemix.net/catalog/services/data-science-experience)
+* The [Apache-Spark](https://console.bluemix.net/catalog/services/apache-spark)
+* Using the existing [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south) from the first Lab
+
 ---
 ## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
 
@@ -355,13 +361,14 @@ Click *create*.
 
     ![new project in DSX](images/dsx-create-project.png)
 
-6. _NOTE:_ **In case no Spark is available**
+6. _NOTE:_ **In case no Apache-Spark is available**
 
-    If you will be informed there is no Spark you have to create a new one
+    If you will be informed there is no Apache-Spark available for your project,
+    you have to create a new one
 
     ![new spark in DSX 01](images/dsx-create-spark-01.png)    
 
-    Select the lite version and give a name
+    Select the lApache-Spark ite version and give a name like **taxi-simulator-spark**
 
     ![new spark in DSX 02](images/dsx-create-spark-01.png)
 
@@ -369,7 +376,7 @@ Click *create*.
 
     ![new spark in DSX 03](images/dsx-create-spark-03.png)
 
-    Select the Spark
+    Select the Spark for your project inside **Data Science Experience** 
 
     ![new spark in DSX 04](images/dsx-create-spark-04.png)     
 
