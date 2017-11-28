@@ -368,11 +368,11 @@ Click *create*.
 
     ![new spark in DSX 01](images/dsx-create-spark-01.png)    
 
-    Select the lApache-Spark ite version and give a name like **taxi-simulator-spark**
+    Select the Apache-Spark lite version and give a name like **taxi-simulator-spark**
 
     ![new spark in DSX 02](images/dsx-create-spark-01.png)
 
-    Create the Spark
+    Create the Spark instance
 
     ![new spark in DSX 03](images/dsx-create-spark-03.png)
 
