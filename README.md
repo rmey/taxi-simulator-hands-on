@@ -93,17 +93,20 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED Boiler Template](images/01_Node-RED_Starter.jpg)
 
 2. Now you can see which application and services will be created. Give the application and route a name like **taxi-simulator-[YOUR-UNIQUE-NAME]**. Here you can find the **Cloudant DB** and the **Node.JS Server** and press **create**.
-![Node-RED Boiler Template Configuration](images/02_Node-RED-Starter_Setup.jpg)
+
+    ![Node-RED Boiler Template Configuration](images/02_Node-RED-Starter_Setup.jpg)
 
 3. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
 
     ![Node-RED Boiler Template Visit URL](images/03_Node-RED-Starter_visit_URL.jpg)
 
 4. Now just **follow the steps in the wizard** to do the basic configuration of the Node-RED instance.
-![Node-RED Boiler Template Follow the steps in the wizard](images/04_Node-RED_Follow_the_Steps_in_the_wizard.jpg)
+
+    ![Node-RED Boiler Template Follow the steps in the wizard](images/04_Node-RED_Follow_the_Steps_in_the_wizard.jpg)
 
 5. Now inspect the landing page and press **Go to your Node-RED flow editor**.
-![Node-RED Boiler Template Inspect the landing page and press go to node red_ ditor](images/05_Node-RED_Inspect_the_landing_page_and_press_go_to_node_red_editor.jpg)
+
+    ![Node-RED Boiler Template Inspect the landing page and press go to node red_ ditor](images/05_Node-RED_Inspect_the_landing_page_and_press_go_to_node_red_editor.jpg)
 
 6. Inside Node-RED we have to add the additional _Nodes_ we will use in our future flow. (For example the [Node-RED Dashboard Package](https://flows.nodered.org/node/node-red-dashboard) and the [Node-RED Virtual IoT Device Package](https://www.npmjs.com/package/node-red-contrib-iot-virtual-device).) First select **manage palatte** from the menu on right upper side of the page.
 
@@ -118,7 +121,8 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED_Select_Manage-Palette](images/07_Node-RED_Install_nodes.jpg)
 
 8. After the installation, verify that the following sections for the installed nodes will appear on the left hand side.
-![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
+
+    ![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
 
 ---
 ### 1.2 Create and bind the needed Bluemix services <a name="part1-2"></a>
@@ -126,14 +130,16 @@ In this part of the Lab you will setup and configure the environment we will use
 **Watson IoT and MessageHub**
 
 1. Go back to your bluemix application and select **connections** on the left hand side and press **connect new**.
-![Bluemix-services_add](images/01_Bluemix_services_add.jpg)
+
+    ![Bluemix-services_add](images/01_Bluemix_services_add.jpg)
 
 2. Search for the Watson IoT Service by inserting **Internet of Things Platform** in the catalog search and press on the service.
 
     ![Bluemix-services_search](images/03_Bluemix_services_search.jpg)
 
 3. For the service name insert **taxi-simulator-InternetOfThingsPlatform** and press **create**. Do **NOT** select restage for now.
-![Bluemix-services_add_iot](images/02_Bluemix_services_add_iot.jpg)
+
+    ![Bluemix-services_add_iot](images/02_Bluemix_services_add_iot.jpg)
 
 4. Repeat the steps 1 to 3 for the Service **MessageHub**. Name this service **taxi-simulator-MessageHub**.
 
@@ -141,22 +147,25 @@ In this part of the Lab you will setup and configure the environment we will use
 **Cloud object storage**
 
 1. Now open the Bluemix catalog directly.
-![Bluemix-services_catalog](images/04_Bluemix_services_catalog.jpg)
+   With following link: https://console.bluemix.net/catalog/infrastructure/object-storage-group
 
 2. Search for **Cloud Object Storage** directly in the catalog and in this infrastructure component, select **Object Storage OpenStack Swift for Bluemix**.
-![Bluemix-services_object_storage](images/05_Bluemix_Services_object-storage.jpg)
+
+   ![Bluemix-services_object_storage](images/05_Bluemix_Services_object-storage.jpg)
 
 <!--- 2. Search for the **Cloud Object Storage** directly in the catalog and select in this infrastructure component the **Bluemix Storage Swift**. ![Bluemix-services_cloud_object_storage](images/05_Bluemix_services_cloud_object_storage.jpg)-->
 
-3. Name the service **taxi-simulator-ObjectStorage** and press create. _NOTE:_ You can only use **ONE** instance per **ORGANIZATION** of **Cloud Object Storage**.                       
-![Bluemix-services_create_object_storage](images/06_Bluemix_services_create_object_storage.jpg)
+3. Name the service **taxi-simulator-ObjectStorage** and press create. _NOTE:_ You can only use **ONE** instance per **ORGANIZATION** of **Cloud Object Storage**.                     
+
+   ![Bluemix-services_create_object_storage](images/06_Bluemix_services_create_object_storage.jpg)
 
 4. Open your Bluemix Application in the Bluemix Dashboard and select **connections**.
 
 5. Then select **connect existing** and search for your just created **Cloud Object Storage for Bluemix** service. If you are now asked to restage the application, press **Restage**.
 
 6. After these steps, you have connected services as in the following picture. In my case I have a different name for the **cloud object storage** service.                               
-![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
+
+   ![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
 
 ---
 ## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
@@ -347,10 +356,12 @@ Now you will access the created data inside the ObjectStorage and Analyze data w
 ## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
 
 1. Select the *Data Science Experience* Service from the Catalog.
+
 ![DSX in the catalog](images/dsx-catalog.png)
 
 2. Name the service **taxi-simulator-Data Science Experience** or choose another name if you like.
 Click *create*.
+
 ![create DSX service](images/dsx-create-service.png)
 
 3. Open the **Data Science Experience** by pressing *Get Started*.
@@ -364,19 +375,19 @@ Click *create*.
 6. _NOTE:_ **In case no Apache-Spark is available**
 
     If you will be informed there is no Apache-Spark available for your project,
-    you have to create a new one
+    * you have to create a new one
 
     ![new spark in DSX 01](images/dsx-create-spark-01.png)    
 
-    Select the Apache-Spark lite version and give a name like **taxi-simulator-spark**
+    * Select the Apache-Spark lite version and give a name like **taxi-simulator-spark**
 
     ![new spark in DSX 02](images/dsx-create-spark-01.png)
 
-    Create the Spark instance
+    * Create the Spark instance
 
     ![new spark in DSX 03](images/dsx-create-spark-03.png)
 
-    Select the Spark for your project inside **Data Science Experience**
+    * Select the Spark for your project inside **Data Science Experience**
 
     ![new spark in DSX 04](images/dsx-create-spark-04.png)     
 
@@ -404,7 +415,9 @@ Click *create*.
   * Display data with _matplotlib_ [Link](https://github.com/matplotlib/matplotlib)
 
   1. **Pixeldust** a easy way to create and change interactive charts.
+
   ![dsx_display_results](images/dsx_display_results_01.jpg)
 
   2. **Matplotlib** using which is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell (à la MATLAB or Mathematica), web application servers, and various graphical user interface toolkits.
+
   ![dsx_display_results](images/dsx_display_results_02.jpg)
