@@ -323,8 +323,9 @@ We need to insert the credentials into the node configuration.
 [->](#part0-0)
 
 1. Copy the URL of your Node-RED application and add **/ui** at the end, e.g.
+
     ```
-    https://taxi-simulartor-tsuedbro.eu-gb.mybluemix.net/ui/
+    https://taxi-[YOUR_NAME].[YOUR_REGION].mybluemix.net/ui/
     ```
 
     There is a menu icon in the upper left corner of the UI, please use it for navigation.
