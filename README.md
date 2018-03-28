@@ -27,16 +27,17 @@
 ## Overview <a name="part0"></a>
 [->](#part0-0)
 
-In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
-This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
+In these Labs you will create a **Taxi-Simulator** for **Watson IoT**. This Taxi-Simulator will create **sample data** for a Data Analytics part in Lab 2 of this  Hands-on Workshop.
 
-_Note:_ Please use for the two Hands-on Labs the **US-South Region** as the Watson Studio Services are only available there.
+_Note: Please use the **US-South Region** for the two Labs as the Watson Studio Services are only available there._
 
 In the following image you can see the dependency of the two Labs.
 
+_Note: IBM Data Science Experience has been renamed and extended. The new name is  **Watson Studio**._
+
 a) [Lab 1 - Taxi-Simulator IoT Part on YouTube](https://youtu.be/wLHU7mRcn94)
 
-![01_Lab_overview](images/01_Lab_overview.png)
+![01_Lab_overview](images/01_Lab_overview.jpg)
 
 The objective of the **first Lab** is related to IoT, that means you will get a basic understanding of the IBM IoT and how to
 customize your own flow in Node-RED, by using the given **IoT Data** to display in your Node-RED Dashboard UI.
@@ -47,7 +48,7 @@ The objective of the **second Lab** is to Analyze the given data using the **Wat
 [->](#part0-0)
 This lab does contain the IoT and the Data generation part.
 
-**Here are the basic UseCases of the Node-RED Dashboard-UI for the first Lab**
+**Here are the basic use cases of the Node-RED Dashboard-UI for the first Lab**
 
 ![01_basic_usecases](images/01_basic_usecases.jpg)
 
@@ -96,27 +97,27 @@ In this part of the Lab you will setup and configure the environment we will use
 
     ![Node-RED Boiler Template Configuration](images/02_Node-RED-Starter_Setup.jpg)
 
-    During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to stop the service, increase the memory to 512 MB and start the service again.
+3. During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to **stop** the service, **increase the memory to 512 MB** and **start** the service again.
 
-  ![Node-RED Boiler Template Visit URL](images/01_Node-RED_Expand Memory.png)
+  ![Node-RED Expand Memory](images/01_Node-RED_Expand Memory.jpg)
 
-3. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
+4. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
 
     ![Node-RED Boiler Template Visit URL](images/03_Node-RED-Starter_visit_URL.jpg)
 
-4. Now just **follow the steps in the wizard** to do the basic configuration of the Node-RED instance.
+5. Now just **follow the steps in the wizard** to do the basic configuration and set a personal **password** for the Node-RED instance.
 
     ![Node-RED Boiler Template Follow the steps in the wizard](images/04_Node-RED_Follow_the_Steps_in_the_wizard.jpg)
 
-5. Now inspect the landing page and press **Go to your Node-RED flow editor**.
+6. Now inspect the landing page and press **Go to your Node-RED flow editor**.
 
     ![Node-RED Boiler Template Inspect the landing page and press go to node red_ ditor](images/05_Node-RED_Inspect_the_landing_page_and_press_go_to_node_red_editor.jpg)
 
-6. Inside Node-RED we have to add the additional _Nodes_ we will use in our future flow. (For example the [Node-RED Dashboard Package](https://flows.nodered.org/node/node-red-dashboard) and the [Node-RED Virtual IoT Device Package](https://www.npmjs.com/package/node-red-contrib-iot-virtual-device).) First select **manage palatte** from the menu on right upper side of the page.
+7. Inside Node-RED we have to add the additional _Nodes_ we will use in our future flow. (For example the [Node-RED Dashboard Package](https://flows.nodered.org/node/node-red-dashboard) and the [Node-RED Virtual IoT Device Package](https://www.npmjs.com/package/node-red-contrib-iot-virtual-device).) First select **manage palatte** from the menu on right upper side of the page.
 
     ![Node-RED_Select_Manage-Palette](images/06_Node-RED_Select_Manage-Palette.jpg)
 
-7. Now choose the Tab **install**, search and press install for each of these four nodes:
+8. Now choose the Tab **install**, search and press install for each of these four nodes:
     * **node-red-dashboard**,
     * **node-red-contrib-iot-virtual-device**,
     * **node-red-contrib-objectstore**,
@@ -124,7 +125,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
     ![Node-RED_Select_Manage-Palette](images/07_Node-RED_Install_nodes.jpg)
 
-8. After the installation, verify that the following sections for the installed nodes will appear on the left hand side.
+9. After the installation, verify that the following sections for the installed nodes will appear on the left hand side.
 
     ![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
 
@@ -207,27 +208,39 @@ Now you will create an app API-Key inside the Watson IoT Service and add the inf
 
 2. Create a new application API-Key inside Watson IoT by pressing **Generate API Key**
 ![Watson_IoT_app_key_01](images/02_Watson_IoT_app_key_01.jpg)
+Insert **Taxi-Simulation** as Description, press **Next**.
 
-3. Change the API Role to **Backend Trusted Application** and insert **Taxi-Simulation** as a comment.
-**NOTE: Don't close this window! Before pressing *generate*, please complete step 4.**
+3. Change API Role to **Backend Trusted Application** and press **Generate Key**.
+
+  _NOTE: **Don't close this window as you will need to insert API Key and Authentification Token in Node-RED two other later! We recommend to save these two values in an additional Editor**. You can view the Key at a later step **but not the Authentification Token! Therefore please save these two values.**_
 ![Watson_IoT_app_key_03](images/03_Watson_IoT_app_key_03.jpg)
 
-4. Now copy and paste API Key and Authentication Token into the Node-RED flow in the tab **Configure-TaxiSimulation**, by opening the function node **"set predefined config for Watson IoT"** and replacing the existing **API Key** and **Authentication Token** with your values. Use **API Key** for **Username** and **Authentication Token** for **Password**.
-```
-      flow.set("orgid", "XXXX");
-      flow.set("instances","2");
-      flow.set("username", "a-XXXX-twkonxv5oo");
-      flow.set("password", "XX+0xANGIYdQG&SdXI");
-      return msg
-```
+4. Open the Dashboard and note the value for the **Cloud Foundry Org**. This will be the value for orgid in the next step.
 
-5. Also copy the Organization ID, which you can find in the right upper corner of the Watson IoT WebPage, into the **"set predefined config for Watson IoT"** node.
-![Watson_IoT_app_key_05](images/node-red-set-iot.png)
+  _**Note:**_Please also add this value in your additional Editor window. So you have values for
 
-6. The **IBM IoT** node in the tab **Configure-TaxiSimulation** might cause an error. If so, insert **"*"** into *Device Id* property.
+  **Key**,
+
+  **Authentification Token**
+
+  and **Organization**.
+
+5. Open the Node-Red flow, select tab **Configure-TaxiSimulation** and double click on node **"set predefined config for Watson IoT"**.
+
+  Insert the values for orgid, username and password.
+
+  The value for **orgid** is the **Cloud Foundry Org** from the previous step.
+
+  The value for **username** is the **API Key** you created two steps before.
+
+  The value for **password** is the **Authentification Token** you  created two steps before.
+
+  ![Watson_IoT_app_key_05](images/node-red-set-iot.png)
+
+6. The **IBM IoT** node in the tab **Configure-TaxiSimulation** might cause an error. Insert **"*"** into *Device Id* property.
 ![IBM_IoT_Node](images/node-red-ibm-iot.png)
 
-7. Press **Deploy** in the right upper corner of the Node-RED Editor page.
+7. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
 ### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="part2-3"></a>
@@ -243,8 +256,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
 3. Open the credentials with **view credentials**.
 
-4. Go back to your Node-RED Editor page and configure the credentials.
-![02_ObjectStorage_02](images/03_ObjectStorage_03.jpg)
+4. Go back to your Node-RED Editor page and configure the credentials. The following table illustrates the mapping.
 
 | ObjectStorage     | Node-RED Node     |
 | :------------- | :------------- |
@@ -253,6 +265,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 | User Name      | username   |
 | Password      | password   |
 
+![02_ObjectStorage_02](images/03_ObjectStorage_03.jpg)
 
 
 ---
@@ -270,7 +283,7 @@ We need to insert the credentials into the node configuration.
 
 3. Copy the credentials into the open MessageHub node and press **Done**.
 
-4. Press **Deploy** in the right upper corner of the Node-RED Editor page.
+4. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
 ## 3. Use the Watson IoT input in Node-RED <a name="part3"></a>
@@ -287,6 +300,8 @@ We need to insert the credentials into the node configuration.
 
 2. Configure IoT input node.                                             
 ![Node-RED configure iot input node](images/11_Node-RED_Configure_iot_input_node.jpg)
+
+  _**Note:** With this setting **you will only get alerts for Taxi01**. If you want alerts for all Taxis please check the **All** checkbox for the **Device Id**_
 
 3. Add debug node and make a connection to the IoT input node
 
@@ -308,17 +323,18 @@ We need to insert the credentials into the node configuration.
 
 8. Create a two additional function nodes; one to build a text message in case of safe status and one to forward all data, and insert following code.          
 ![Node-RED All function nodes](images/14_Node-RED_All_function_nodes.jpg)
-```
-  // Safe
-  msg.payload = "The velocity is " + msg.payload.d.velocity + ".";
-  return msg;
-```
-```
+  ```
   // All
   msg.payload = msg.payload.d.velocity;
   return msg;
-```
-9. Press **Deploy** in the right upper corner of the Node-RED Editor page.
+  ```
+
+  ```
+  // Safe
+  msg.payload = "The velocity is " + msg.payload.d.velocity + ".";
+  return msg;
+  ```
+9. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**
 
 ---
 ## 4. Use the Web UI for Simulation <a name="part4"></a>
@@ -332,11 +348,21 @@ We need to insert the credentials into the node configuration.
 
     There is a menu icon in the upper left corner of the UI, please use it for navigation.
 
-2. Under **"Taxi-Sim IoT Config"**, you can insert the API Key and Organization ID of the Watson IoT Service as well as the number of taxis you wish to simulate. Then click *"submit"* to start the simulation.
+2. Under **"Taxi-Sim IoT Config"**, you insert:
 
-3. Under **"Taxi-Sim Status"**, you can see the status of your current simulation. There are three graphs showing the velocity over time for taxis 1 and 2 and for all taxis combined.
+  **IoT Username**: This is the **Key** you saved in a separate Editor, when generating the API Key in the IBM Watsopn IOT Platform Service.
 
-    To stop the simulation, press **"Turn off Taxi-Simulation"**. To start a simulation of 2 taxis, press **"Turn on Taxi Simulation (2 Taxis)"**
+  **IoT Password**: This is the **Authentification Token** you saved in a separate Editor, when generating the API Key in the IBM Watson IOT Platform Service.
+
+  **IoT Organization**: This is the **Cloud Foundry Org** that is displayed in the Dashboard.
+
+  **Number of Taxis**: the number of taxis you wish to simulate
+
+  Press **"SUBMIT"** to start the simulation. It will take some time and a voice will tell you when the Taxis start.
+
+3. Under **"Taxi-Sim Status"**, you can see the status of your current simulation. There are three graphs showing the velocity over time for taxi 01 and 02 and the average for all taxis.
+
+    To stop the simulation, press **"Turn off Taxi-Simulation"**. To restart a simulation of 2 taxis, press **"Turn on Taxi Simulation (2 Taxis)"**
 
     ![Taxi Sim Status](images/ui-taxi-sim-status.png)
 
