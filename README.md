@@ -1,7 +1,7 @@
 # Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 
 ## Steps of the Labs <a name="part0-0"></a>
-
+
 [Overview](#part0)
 
 ---
@@ -30,7 +30,7 @@
 In these Labs you will create a **Taxi-Simulator** for **Watson IoT**.
 This Taxi-Simulator will create **sample data** for a Data Analytics part, in the Lab 2 of this  Hands-on Workshop.
 
-_Note:__ Please use for the two Hands-on Labs the **US-South Region**.
+_Note:_ Please use for the two Hands-on Labs the **US-South Region** as the Watson Studio Services are only available there.
 
 In the following image you can see the dependency of the two Labs.
 
@@ -96,6 +96,10 @@ In this part of the Lab you will setup and configure the environment we will use
 
     ![Node-RED Boiler Template Configuration](images/02_Node-RED-Starter_Setup.jpg)
 
+    During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to stop the service, increase the memory to 512 MB and start the service again.
+
+  ![Node-RED Boiler Template Visit URL](images/01_Node-RED_Expand Memory.png)
+
 3. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
 
     ![Node-RED Boiler Template Visit URL](images/03_Node-RED-Starter_visit_URL.jpg)
@@ -129,13 +133,13 @@ In this part of the Lab you will setup and configure the environment we will use
 [->](#part0-0)
 **Watson IoT and MessageHub**
 
-1. Go back to your bluemix application and select **connections** on the left hand side and press **connect new**.
-
-    ![Bluemix-services_add](images/01_Bluemix_services_add.jpg)
-
-2. Search for the Watson IoT Service by inserting **Internet of Things Platform** in the catalog search and press on the service.
+1. Search for the Watson IoT Service by inserting **Internet of Things Platform** in the catalog search and press on the service.
 
     ![Bluemix-services_search](images/03_Bluemix_services_search.jpg)
+
+2. Go back to your bluemix application and select **connections** on the left hand side and press **connect new**.
+
+    ![Bluemix-services_add](images/01_Bluemix_services_add.jpg)
 
 3. For the service name insert **taxi-simulator-InternetOfThingsPlatform** and press **create**. Do **NOT** select restage for now.
 
@@ -153,15 +157,13 @@ In this part of the Lab you will setup and configure the environment we will use
 
    ![Bluemix-services_object_storage](images/05_Bluemix_Services_object-storage.jpg)
 
-<!--- 2. Search for the **Cloud Object Storage** directly in the catalog and select in this infrastructure component the **Bluemix Storage Swift**. ![Bluemix-services_cloud_object_storage](images/05_Bluemix_services_cloud_object_storage.jpg)-->
-
 3. Name the service **taxi-simulator-ObjectStorage** and press create. _NOTE:_ You can only use **ONE** instance per **ORGANIZATION** of **Cloud Object Storage**.                     
 
    ![Bluemix-services_create_object_storage](images/06_Bluemix_services_create_object_storage.jpg)
 
-4. Open your Bluemix Application in the Bluemix Dashboard and select **connections**.
+4. Open the Dashboard and select your Cloud Foundry **taxi-simulation App**. Select **Connections**.
 
-5. Then select **connect existing** and search for your just created **Cloud Object Storage for Bluemix** service. If you are now asked to restage the application, press **Restage**.
+5. Select **Create Connection** and select your just created **Cloud Object Storage** service. If you are asked to restage the application, press **Restage**.
 
 6. After these steps, you have connected services as in the following picture. In my case I have a different name for the **cloud object storage** service.                               
 
