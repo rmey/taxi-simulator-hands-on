@@ -1,4 +1,4 @@
-# Bluemix Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
+# IBM Cloud Hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 
 ## Steps of the Labs <a name="part0-0"></a>
 
@@ -9,7 +9,7 @@
 
   1. [Setup the needed application and services](#part1)
       1. [Setup and configure Node-RED](#part1-1)
-      2. [Create and bind the needed Bluemix services](#part1-2)
+      2. [Create and bind the needed IBM Cloud services](#part1-2)
   2. [Configure the services and adapt the Node-RED flow](#part2)
       1. [Import existing Node-RED flow](#part2-1)
       2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#part2-2)
@@ -40,7 +40,7 @@ a) [Lab 1 - Taxi-Simulator IoT Part on YouTube](https://youtu.be/wLHU7mRcn94)
 
 The objective of the **first Lab** is related to IoT, that means you will get a basic understanding of the IBM IoT and how to
 customize your own flow in Node-RED, by using the given **IoT Data** to display in your Node-RED Dashboard UI.
-The objective of the **second Lab** is to Analyze the given data using the **Data Science Experience** in Bluemix.
+The objective of the **second Lab** is to Analyze the given data using the **Watson Studio** in IBM Cloud.
 
 ---
 # Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1"></a>
@@ -88,7 +88,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 ### 1.1 Setup and configure Node-RED <a name="part1-1"></a>
 [->](#part0-0)
-1. Logon to your Bluemix Account and search the catalog for Node-RED. You will find the **Node-RED Boiler Template** and click on the icon.
+1. Logon to your IBM Cloud Account and search the catalog for Node-RED. You will find the **Node-RED Boiler Template** and click on the icon.
 
     ![Node-RED Boiler Template](images/01_Node-RED_Starter.jpg)
 
@@ -129,7 +129,7 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
 
 ---
-### 1.2 Create and bind the needed Bluemix services <a name="part1-2"></a>
+### 1.2 Create and bind the needed IBM Cloud services <a name="part1-2"></a>
 [->](#part0-0)
 **Watson IoT and MessageHub**
 
@@ -137,7 +137,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
     ![Bluemix-services_search](images/03_Bluemix_services_search.jpg)
 
-2. Go back to your bluemix application and select **connections** on the left hand side and press **connect new**.
+2. Go back to your IBM Cloud application and select **connections** on the left hand side and press **connect new**.
 
     ![Bluemix-services_add](images/01_Bluemix_services_add.jpg)
 
@@ -150,10 +150,10 @@ In this part of the Lab you will setup and configure the environment we will use
 ---
 **Cloud object storage**
 
-1. Now open the Bluemix catalog directly.
+1. Now open the IBM Cloud catalog directly.
    With following link: https://console.bluemix.net/catalog/infrastructure/object-storage-group
 
-2. Search for **Cloud Object Storage** directly in the catalog and in this infrastructure component, select **Object Storage OpenStack Swift for Bluemix**.
+2. Search for **Cloud Object Storage** directly in the catalog and in this infrastructure component, select **Bluemix Object Storage Swift**.
 
    ![Bluemix-services_object_storage](images/05_Bluemix_Services_object-storage.jpg)
 
