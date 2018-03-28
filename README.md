@@ -212,7 +212,7 @@ Insert **Taxi-Simulation** as Description, press **Next**.
 
 3. Change API Role to **Backend Trusted Application** and press **Generate Key**.
 
-  _NOTE: **Don't close this window as you will need to insert API Key and Authentification Token in Node-RED two other later! We recommend to save these two values in an additional Editor**. You can view the Key at a later step **but not the Authentification Token! Therefore please save these two values.**_
+  _**Note: Keep this window open** and **store API Key and Authentification Token at a safe place (e.g. copy it to another editor window and save the file.)**. You will need to insert API Key and Authentification Token in Node-RED and the Taxi Simulation at later steps. **You will not be able to see the Token again, therefore safe the values of Key and Token.**_
 ![Watson_IoT_app_key_03](images/03_Watson_IoT_app_key_03.jpg)
 
 4. Open the Dashboard and note the value for the **Cloud Foundry Org**. This will be the value for orgid in the next step.
