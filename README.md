@@ -1,22 +1,22 @@
 # IBM Cloud hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
 ## Steps of the Labs
-* [Overview](#part0)
-* [Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED](#part0-1)
-  1. [Setup the needed application and services](#part1)
-      1. [Setup and configure Node-RED](#part1-1)
-      2. [Create and bind the needed IBM Cloud services](#part1-2)
-  2. [Configure the services and adapt the Node-RED flow](#part2)
-      1. [Import existing Node-RED flow](#part2-1)
-      2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#part2-2)
-      3. [Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab](#part2-3)
-      4. [Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab](#part2-4)
-  3. [Use the Watson IoT input in Node-RED](#part3)
-  4. [Use the Web UI for Simulation](#part4)
-* [Lab 2 - Analyze Data with Watson Studio](#part0-2)
-  * [Analyze the IoT data with Watson Studio](#part5)
-* [Summary](#part6)
+* [Overview](#1-part-0)
+* [Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED](#1-part-1)
+  1. [Setup the needed application and services](#1-part1-0)
+      1. [Setup and configure Node-RED](#1-part1-1)
+      2. [Create and bind the needed IBM Cloud services](#1-part1-2)
+  2. [Configure the services and adapt the Node-RED flow](#1-part2)
+      1. [Import existing Node-RED flow](#1-part2-1)
+      2. [Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab](#1-part2-2)
+      3. [Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab](#1-part2-3)
+      4. [Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab](#1-part2-4)
+  3. [Use the Watson IoT input in Node-RED](#1-part3)
+  4. [Use the Web UI for Simulation](#1-part4)
+* [Lab 2 - Analyze Data with Watson Studio](#2-part0)
+  * [Analyze the IoT data with Watson Studio](#2-part1)
+* [Summary](#3-part-0)
 ---
-## Overview
+## Overview <a name="1-part-0">
 
 In these Labs you will create a **Taxi-Simulator** for **Watson IoT**. This Taxi-Simulator will create **sample data** for a Data Analytics part in Lab 2 of this  Hands-on Workshop.
 
@@ -35,7 +35,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Watson Studio** in IBM Cloud.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="1-part1-0">
 
 **Here are the basic use cases of the Node-RED Dashboard-UI for the first Lab**
 
