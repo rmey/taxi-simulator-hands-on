@@ -35,9 +35,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Watson Studio** in IBM Cloud.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="part0-1"></a>
-[->](#part0-0)
-This lab does contain the IoT and the Data generation part.
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED
 
 **Here are the basic use cases of the Node-RED Dashboard-UI for the first Lab**
 
