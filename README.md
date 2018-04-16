@@ -200,13 +200,10 @@ Insert **Taxi-Simulation** as Description, press **Next**.
 
 4. Open the Dashboard and note the value for the **Cloud Foundry Org**. This will be the value for orgid in the next step.
 
-  _**Note:**_Please also add this value in your additional Editor window. So you have values for
-
-  **Key**,
-
-  **Authentification Token**
-
-  and **Organization**.
+  **Note:** Please also add this value in your additional Editor window. So you have values for
+  * **Key**,
+  * **Authentification Token**
+  * **Organization**
 
 5. Open the Node-Red flow, select tab **Configure-TaxiSimulation** and double click on node **"set predefined config for Watson IoT"**.
 
@@ -226,8 +223,7 @@ Insert **Taxi-Simulation** as Description, press **Next**.
 7. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
-### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="part2-3"></a>
-[->](#part0-0)
+### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab
 
 You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
@@ -252,8 +248,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
 
 ---
-### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab <a name="part2-4"></a>
-[->](#part0-0)
+### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab
 
 In this tab you can create a sample data record, which will be stored in the ObjectStorage database.
 We need to insert the credentials into the node configuration.
@@ -269,8 +264,7 @@ We need to insert the credentials into the node configuration.
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
-## 3. Use the Watson IoT input in Node-RED <a name="part3"></a>
-[->](#part0-0)
+## 3. Use the Watson IoT input in Node-RED <a name="part3">
 
 **Create your own Node-RED flow**
 * Use Watson IoT as input in your flow
@@ -425,7 +419,7 @@ Press **Manage** in the menu at the left, then in the Containes section click on
 
   ![taxi simualtion data](images/ws_07.jpeg)  
 
-**Hint:** Though the files have the extension .wav they do not contain any sound data but the simulation data of the taxi.
+**Note:** Though the files have the extension .wav they do not contain any sound data but the simulation data of the taxi.
 
 *{"orgId":"org","deviceType":"Taxi","deviceId":"Taxi02","eventType":"update","timestamp":"Mon Apr 16 2018 09:23:35 GMT+0000 (UTC)","sensorData":{"location":{"longitude":-87.9,"latitude":43.03},"velocity":25}}
   {"orgId":"org","deviceType":"Taxi","deviceId":"Taxi03","eventType":"update","timestamp":"Mon Apr 16 2018 09:23:35 GMT+0000 (UTC)","sensorData":{"location":{"longitude":-95.99,"latitude":41.25},"velocity":22}}*
