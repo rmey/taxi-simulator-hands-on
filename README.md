@@ -75,7 +75,7 @@ The objective of the **second Lab** is to Analyze the given data using the **Wat
 ## 1. Setup the needed application and services <a name="1-part1-0">
 In this part of the Lab you will setup and configure the environment we will use for your **Taxi-Simulator**.
 
-### 1.1 Setup and configure Node-RED <a name="1-part1-0">
+### 1.1 Setup and configure Node-RED <a name="1-part1-1">
 1. Logon to your IBM Cloud Account and search the catalog for Node-RED. You will find the **Node-RED Boiler Template** and click on the icon.
 
     ![Node-RED Boiler Template](images/01_Node-RED_Starter.jpg)
