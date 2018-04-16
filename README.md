@@ -89,7 +89,7 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED Expand Memory](images/01_Node-RED_Expand Memory1.jpeg)
 
 4. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
-
+    ![Node-RED Boiler Template Visit URL](images/01_Node-RED_Expand Memory1.jpeg)
     ![Node-RED Boiler Template Visit URL](images/03_Node-RED-Starter_visit_URL.jpg)
 
 5. Now just **follow the steps in the wizard** to do the basic configuration and set a personal **password** for the Node-RED instance.
