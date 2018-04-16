@@ -35,7 +35,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Watson Studio** in IBM Cloud.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="1-part1">
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="1-part-1">
 
 **Here are the basic use cases of the Node-RED Dashboard-UI for the first Lab**
 
@@ -157,7 +157,7 @@ In this part of the Lab you will setup and configure the environment we will use
    ![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
 
 ---
-## 2. Configure the services and adapt the Node-RED flow <a name="#1-part2"></a>
+## 2. Configure the services and adapt the Node-RED flow <a name="#1-part2">
 
 ### 2.1 Import existing Node-RED flow <a name="#1-part2-1">
 
