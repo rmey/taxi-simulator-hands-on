@@ -1,7 +1,5 @@
 # IBM Cloud hands-on Lab for IoT: Creating a Taxi-Simulator and Analyze data
-
-## Steps of the Labs <a name="part0-0"></a>
-
+## Steps of the Labs
 * [Overview](#part0)
 * [Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED](#part0-1)
   1. [Setup the needed application and services](#part1)
