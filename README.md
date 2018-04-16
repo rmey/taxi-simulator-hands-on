@@ -356,7 +356,7 @@ Now you will access the created data inside the ObjectStorage and Analyze data w
 * Using an [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south)
 
 ---
-## Analyzing the IoT data with Watson Studio <a name="part5"></a>
+## Analyzing the IoT data with Watson Studio <a name="2-part1"></a>
 
 1. Select the **Watson Studio** Service from the Catalog.
 ![WatsonStudio service](images/ws_00.jpeg)
@@ -439,7 +439,7 @@ Press **Manage** in the menu at the left, then in the Containes section click on
 
   ![dsx_display_results](images/dsx_display_results_02.jpg)
 
-# Summary <a name="3-part0"></a>
+# Summary <a name="3-part-0"></a>
 In this lab you customized your own flow in Node-RED, visualized the **IoT Data** in your Node-RED Dashboard UI and stored the data in **Object Storage Repository**.
 
 In the second step you analyzed the given data using the **Watson Studio** in IBM Cloud.
