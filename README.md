@@ -86,7 +86,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
 3. During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to **stop** the service, **increase the memory to 512 MB** and **start** the service again.
 
-    ![Node-RED Expand Memory](images/01_Node-RED_Expand Memory.jpg)
+    ![Node-RED Expand Memory](images/01_Node-RED_Expand Memory1.jpeg)
 
 4. After this step, select **Visit App URL** to get to the Running Node-RED instance on the Node.JS Server. It might take a few minutes until the server is ready.
 
