@@ -35,7 +35,7 @@ customize your own flow in Node-RED, by using the given **IoT Data** to display 
 The objective of the **second Lab** is to Analyze the given data using the **Watson Studio** in IBM Cloud.
 
 ---
-# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="1-part1-0">
+# Lab 1 - Create Data with Watson IoT, ObjectStorage and Node-RED <a name="1-part1">
 
 **Here are the basic use cases of the Node-RED Dashboard-UI for the first Lab**
 
@@ -72,10 +72,10 @@ The objective of the **second Lab** is to Analyze the given data using the **Wat
 * The [Message Hub](https://console.bluemix.net/catalog/?context=services&app=bdd3e76c-09b7-47a6-8515-50c7e6b477e9&env_id=ibm%3Ayp%3Aeu-gb&search=Message%20Hub)
 
 ---
-## 1. Setup the needed application and services
+## 1. Setup the needed application and services <a name="1-part1-0">
 In this part of the Lab you will setup and configure the environment we will use for your **Taxi-Simulator**.
 
-### 1.1 Setup and configure Node-RED
+### 1.1 Setup and configure Node-RED <a name="1-part1-0">
 1. Logon to your IBM Cloud Account and search the catalog for Node-RED. You will find the **Node-RED Boiler Template** and click on the icon.
 
     ![Node-RED Boiler Template](images/01_Node-RED_Starter.jpg)
@@ -117,7 +117,7 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
 
 ---
-### 1.2 Create and bind the needed IBM Cloud services <a name="part1-2">
+### 1.2 Create and bind the needed IBM Cloud services <a name="1-part1-2">
 **Watson IoT and MessageHub**
 
 1. Search for the Watson IoT Service by inserting **Internet of Things Platform** in the catalog search and press on the service.
@@ -157,9 +157,9 @@ In this part of the Lab you will setup and configure the environment we will use
    ![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
 
 ---
-## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
+## 2. Configure the services and adapt the Node-RED flow <a name="#1-part2"></a>
 
-### 2.1 Import existing Node-RED flow
+### 2.1 Import existing Node-RED flow <a name="#1-part2-1">
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
@@ -174,7 +174,7 @@ In this part of the Lab you will setup and configure the environment we will use
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab
+### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab <a name="#1-part2-2">
 Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 1. With the taxi-simulator you can create different Taxi devices inside the Watson IoT Platform.
@@ -223,7 +223,7 @@ Insert **Taxi-Simulation** as Description, press **Next**.
 7. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
-### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab
+### 2.3 Configure the ObjectStorage Nodes inside the Node-RED "Configure-Blob for ObjectStorage" Tab and "Taxi-Simulation" Tab <a name="#1-part2-3">
 
 You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
@@ -248,7 +248,7 @@ You have to configure the credentials of the ObjectStorage usage inside Node-RED
 
 
 ---
-### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab
+### 2.4 Configure the MessageHub Node inside the Node-RED "Configure-Blob for ObjectStorage" Tab <a name="#1-part2-4">
 
 In this tab you can create a sample data record, which will be stored in the ObjectStorage database.
 We need to insert the credentials into the node configuration.
@@ -264,7 +264,7 @@ We need to insert the credentials into the node configuration.
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**.
 
 ---
-## 3. Use the Watson IoT input in Node-RED <a name="part3">
+## 3. Use the Watson IoT input in Node-RED <a name="#1-part3">
 
 **Create your own Node-RED flow**
 * Use Watson IoT as input in your flow
@@ -314,7 +314,7 @@ We need to insert the credentials into the node configuration.
 9. Press **Deploy** in the right upper corner of the Node-RED Editor page. Press **Confirm Deploy**
 
 ---
-## 4. Use the Web UI for Simulation
+## 4. Use the Web UI for Simulation <a name="#1-part4">
 
 1. Copy the URL of your Node-RED application and add **/ui** at the end, e.g.
 
@@ -345,7 +345,7 @@ We need to insert the credentials into the node configuration.
 ![Taxi Sim IoT](images/ui-taxi-sim-iot.png)
 
 ---
-# Lab 2 - Analyze Data with Data Science Experience
+# Lab 2 - Analyze Data with Data Science Experience <a name="#2-part0">
 
 Now you will access the created data inside the ObjectStorage and Analyze data with **Watson Studio**, by showing charts using **Pixeldust** and **Matplotlib**.
 
@@ -356,7 +356,7 @@ Now you will access the created data inside the ObjectStorage and Analyze data w
 * Using an [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south)
 
 ---
-## Analyzing the IoT data with Watson Studio <a name="part5"></a>
+## Analyzing the IoT data with Watson Studio <a name="part5"></a> <a name="#2-part1">
 
 1. Select the **Watson Studio** Service from the Catalog.
 ![WatsonStudio service](images/ws_00.jpeg)
@@ -439,7 +439,7 @@ Press **Manage** in the menu at the left, then in the Containes section click on
 
   ![dsx_display_results](images/dsx_display_results_02.jpg)
 
-# Summary
+# Summary <a name="#3-part0">
 In this lab you customized your own flow in Node-RED, visualized the **IoT Data** in your Node-RED Dashboard UI and stored the data in **Object Storage Repository**.
 
 In the second step you analyzed the given data using the **Watson Studio** in IBM Cloud.
