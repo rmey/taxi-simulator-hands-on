@@ -117,8 +117,7 @@ In this part of the Lab you will setup and configure the environment we will use
     ![Node-RED_Select_Manage-Palette](images/08_Node-RED_List_of_installed_nodes.jpg)
 
 ---
-### 1.2 Create and bind the needed IBM Cloud services <a name="part1-2"></a>
-[->](#part0-0)
+### 1.2 Create and bind the needed IBM Cloud services <a name="part1-2">
 **Watson IoT and MessageHub**
 
 1. Search for the Watson IoT Service by inserting **Internet of Things Platform** in the catalog search and press on the service.
@@ -160,8 +159,7 @@ In this part of the Lab you will setup and configure the environment we will use
 ---
 ## 2. Configure the services and adapt the Node-RED flow <a name="part2"></a>
 
-### 2.1 Import existing Node-RED flow <a name="part2-1"></a>
-[->](#part0-0)
+### 2.1 Import existing Node-RED flow
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
@@ -176,8 +174,7 @@ In this part of the Lab you will setup and configure the environment we will use
 4. Press **Deploy** in the right upper corner of the Node-RED Editor page.
 
 ---
-### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab <a name="part2-2"></a>
-[->](#part0-0)
+### 2.2 Configure Watson IoT inside the Node-RED "Configure-TaxiSimulation" Tab
 Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 1. With the taxi-simulator you can create different Taxi devices inside the Watson IoT Platform.
@@ -187,7 +184,6 @@ Inside the **Configure-TaxiSimulation** tab you have following functionality:
 
 ---
 #### 2.2.1  Watson IoT Service and Node-RED configuration
-[->](#part0-0)
 Now you will create an app API-Key inside the Watson IoT Service and add the information to the existing Node-RED flow.
 
 1. Open the existing Watson IoT Service and press launch
@@ -355,8 +351,7 @@ We need to insert the credentials into the node configuration.
 ![Taxi Sim IoT](images/ui-taxi-sim-iot.png)
 
 ---
-# Lab 2 - Analyze Data with Data Science Experience <a name="part0-2"></a>
-[->](#part0-0)
+# Lab 2 - Analyze Data with Data Science Experience
 
 Now you will access the created data inside the ObjectStorage and Analyze data with **Watson Studio**, by showing charts using **Pixeldust** and **Matplotlib**.
 
