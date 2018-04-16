@@ -373,68 +373,82 @@ We need to insert the credentials into the node configuration.
 # Lab 2 - Analyze Data with Data Science Experience <a name="part0-2"></a>
 [->](#part0-0)
 
-Now you will access the created data inside the ObjectStorage and Analyze data with the *Data Science Experience*, by showing charts using **Pixeldust** and **Matplotlib**.
+Now you will access the created data inside the ObjectStorage and Analyze data with **Watson Studio**, by showing charts using **Pixeldust** and **Matplotlib**.
 
 **What you will use in IBM Cloud?**
 
-* The [Data Science Experience](https://console.bluemix.net/catalog/services/data-science-experience)
+*  [Watson Studio](https://console.bluemix.net/catalog/services/data-science-experience)
 * The [Apache-Spark](https://console.bluemix.net/catalog/services/apache-spark)
-* Using the existing [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south) from the first Lab
+* Using an [Object Store Database](https://console.bluemix.net/catalog/services/Object-Storage?env_id=ibm%3Ayp%3Aus-south)
 
 ---
-## 1. Analyzing the IoT data with Data Science Experience <a name="part5"></a>
+## 1. Analyzing the IoT data with Watson Studio <a name="part5"></a>
 
-1. Select the *Data Science Experience* Service from the Catalog.
+1. Select the **Watson Studio** Service from the Catalog.
+![WatsonStudio service](images/ws_00.jpeg)
 
-![DSX in the catalog](images/dsx-catalog.png)
+2. Name the service **taxi-simulator-WatsonStudio** or choose another name if you like.
+Press **Create**.
 
-2. Name the service **taxi-simulator-Data Science Experience** or choose another name if you like.
-Click *create*.
+  ![create Watson Studio service](images/ws_01.jpeg)
 
-![create DSX service](images/dsx-create-service.png)
-
-3. Open the **Data Science Experience** by pressing *Get Started*.
+3. Open  **Watson Studio** by pressing **Get Started**.
 
 4. When asked to select *Organization* and *Space*, verify the selection with your *Organization* and *Space* of the IoT Lab 1 and confirm the defaults, if this fits and press *continue*.
 
-5. Create a new project by clicking *Create new > Project* in the upper right corner.
+5. Create a new project by clicking **Projects**, **View all Projects** and **+ New Project** in the menu bar.
 
-    ![new project in DSX](images/dsx-create-project.png)
+    ![new project in DSX](images/dsx-create-project.png)  
 
-6. _NOTE:_ **In case no Apache-Spark is available**
+6. Give your new project a name, for example **taxi-simulator-project**. Leave the defaults for the other configurations.
 
-    If you will be informed there is no Apache-Spark available for your project,
-    * you have to create a new one
+  In the right column in the Define storage service section press **Add**.
 
-    ![new spark in DSX 01](images/dsx-create-spark-01.png)    
+  You are going to create a new Cloud Object Storage. **Scroll down to the bottom of the page**.
 
-    * Select the Apache-Spark lite version and give a name like **taxi-simulator-spark**
+  Check the **Lite** option.
 
-    ![new spark in DSX 02](images/dsx-create-spark-01.png)
+  Press **Create**.
 
-    * Create the Spark instance
+      ![create a new Cloud Object Storage](images/ws_02.jpeg)      
 
-    ![new spark in DSX 03](images/dsx-create-spark-03.png)
+7. In the new dialog name the service **taxi-simulator-cloud-object-storage** and press **Confirm**.
+      ![confirm create a new Cloud Object Storage](images/ws_03.jpeg)
+8. Back in the New project dialog press **Refresh** in the right column. You now see the created cloud storage.
 
-    * Select the Spark for your project inside **Data Science Experience**
+  Press **Create** to create the new project.
+      ![confirm create a new Cloud Object Storage](images/ws_04.jpeg)
 
-    ![new spark in DSX 04](images/dsx-create-spark-04.png)     
+9. You have created and opened a new project. From the menu bar, select **Tools** then **Notebook**. Choose **"From File"**, name the notebook **"Taxi"** and select the file **[python-notebook/Taxi.ipynb](python-notebook/Taxi.ipynb)** . Then press **Create Notebook**.
 
-7. Give your new project a name, for example **"taxi-lab"**. Leave the defaults for the other configurations.
+    ![create notebook](images/ws_05.jpeg)
 
-    The chosen Spark Service is the default Spark service that was configured when you set up your DSX account.
+10. Follow the instructions given in the **notebook**. You will process different steps and execute code by pressing the "Play" icon in the menu bar of that window.
 
-    The target object storage instance is your *taxi-simulator-ObjectStorage*.
+  You need to enter four parameters to get data from the Object Storage that can be processed
 
-    Press **create**.
+  What you need is:
+  * username
+  * password
+  * domainId
+  * file with taxi speed data
 
-    ![name new project](images/dsx-create-project-details.png)
+Open the **taxi-simulator-ObjectStorage** service and press **Service Credentials**, then expand **View credentials**
 
-8. In your new project, select **add notebooks**. Choose **"From File"**, name the notebook *"Taxi"* (or anything else) and select the file **[python-notebook/Taxi.ipynb](python-notebook/Taxi.ipynb)** from this repository. Then press **Create Notebook**.
 
-    ![create notebook](images/dsx-create-notebook.png)
+This is where you get the first three parameters.
 
-9. Follow the instructions given in the **notebook**.
+  ![provide logon data](images/ws_06.jpeg)
+
+The fourth parameter is a file of taxi simualtion data.
+Press **Manage** in the menu at the left, then in the Containes section click on the container **Taxi**. You see a list of *.wav* files. T **Please pick one of the file name.**
+
+  ![taxi simualtion data](images/ws_07.jpeg)  
+
+**Hint:** Though the files have the extension .wav they do not contain any sound data but the simulation data of the taxi.
+
+*{"orgId":"org","deviceType":"Taxi","deviceId":"Taxi02","eventType":"update","timestamp":"Mon Apr 16 2018 09:23:35 GMT+0000 (UTC)","sensorData":{"location":{"longitude":-87.9,"latitude":43.03},"velocity":25}}
+  {"orgId":"org","deviceType":"Taxi","deviceId":"Taxi03","eventType":"update","timestamp":"Mon Apr 16 2018 09:23:35 GMT+0000 (UTC)","sensorData":{"location":{"longitude":-95.99,"latitude":41.25},"velocity":22}}*
 
   Here a brief preview on the upcoming steps using **Python/Spark** inside the **Jupyter notebook**. [Link](http://jupyter.org/)
   * Preparing the environment
@@ -450,3 +464,8 @@ Click *create*.
   2. **Matplotlib** using which is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell (à la MATLAB or Mathematica), web application servers, and various graphical user interface toolkits.
 
   ![dsx_display_results](images/dsx_display_results_02.jpg)
+
+# Summary
+In this lab you customized your own flow in Node-RED, visualized the **IoT Data** in your Node-RED Dashboard UI and stored the data in **Object Storage Repository**.
+
+In the second step you ananalyzed the given data using the **Watson Studio** in IBM Cloud.
