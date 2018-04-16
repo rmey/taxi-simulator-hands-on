@@ -157,9 +157,11 @@ In this part of the Lab you will setup and configure the environment we will use
    ![Bluemix-services_connected_services](images/07_Bluemix_services_connected_services.jpg)
 
 ---
-## 2. Configure the services and adapt the Node-RED flow <a name="#1-part2">
+## 2. Configure the services and adapt the Node-RED flow
+<a name="#1-part2">
 
-### 2.1 Import existing Node-RED flow <a name="#1-part2-1">
+### 2.1 Import existing Node-RED flow
+<a name="#1-part2-1">
 
 **Copy the prepared Node-RED flow into the your Node-RED instance**
 
