@@ -84,7 +84,7 @@ In this part of the Lab you will setup and configure the environment we will use
 
     ![Node-RED Boiler Template Configuration](images/02_Node-RED-Starter_Setup.jpg)
 
-3. During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to **stop** the service, **increase the memory to 512 MB** and **start** the service again.
+3. During testing we discovered that in some cases the service came up with errors or did not come up at all. Therefore we recommend to **stop** the service, **increase the memory to 512 MB** and **start** the service again...
 
   ![Node-RED Expand Memory](images/01_Node-RED_Expand Memory.jpg)
 
