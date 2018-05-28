@@ -1,0 +1,12 @@
+{
+  "auth_url": "https://identity.open.softlayer.com",
+  "project": "object_storage_250288f2_650a_471d_9478_98c3c72e151d",
+  "projectId": "b27d65bf8ee645c2b6a708f9f4d4bf0b",
+  "region": "dallas",
+  "userId": "0dd2281eddb343849a928eb5e9901d6d",
+  "username": "admin_f6221c35fb74052efa84444df6963069714478b8",
+  "password": "ynYr6,*4(XB[9iO{",
+  "domainId": "b32a9572c3e74a1296f3c54591a4f7d6",
+  "domainName": "893439",
+  "role": "admin"
+}
